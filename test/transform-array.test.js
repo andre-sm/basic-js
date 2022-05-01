@@ -31,7 +31,7 @@ describe('Transform array', () => {
 
         it.optional('throws an Error with message "\'arr\' parameter must be an instance of the Array!" if arr is not an instance of the Array', function () {
             const res = checkForThrowingErrors.call(this, [
-                () => transform(3),
+                () => transform(3), 
                 () => transform(3.312312),
                 () => transform(false),
                 () => transform(null),
